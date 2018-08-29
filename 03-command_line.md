@@ -48,6 +48,8 @@ Make a cheat sheet for yourself: a list of at least **ten** commands and what th
     ls (directory content) .   
     ls -l (directory listing) .   
     ls -a (directory listing including hidden files) .   
+    awk (is something I'd like to explore, sounds like a useful thing) .   
+    
     
  
 
@@ -92,7 +94,15 @@ ls -v (unedited printing of non graphic characters) .
 
 What does `xargs` do? Give an example of how to use it.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > xargs is a command that converts input into an argument to a command.    
+It looks like it is useful when we need to apply a command to multiple filepaths, to search,or manipulate with multiple files. I will explore more.    
+
+An simple example (both commands create empty file).          
+touch myfile1.txt .   
+echo myfile2.txt | xargs touch .   
+
+
+
 
  
 
