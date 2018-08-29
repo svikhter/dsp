@@ -79,7 +79,12 @@ ls - Glp (dir listing, colorized output, long format, writes a slash after each 
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > ls -t (most recent files) .   
+ls -C (multi-column output) .   
+ls -S (sort files by size) .   
+ls -q (printing of non graphic characters in file name as ?) .   
+ls -w (raw printing of non printable characters) .   
+ls -v (unedited printing of non graphic characters) .   
 
 ---
 
