@@ -20,35 +20,34 @@ Here's a list of items with which you should be familiar:
 
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do.  (Use the 8 items above and add a couple of your own.)  
 
-> > pwd   (print working directory)
-    cd mydir (change directory)
-    cd .. (up one level)
-    mkdir (create directory)
-    mkdir -p 
-    rmdir <dir>  (remove directory)
-    touch myfile.txt (create file, doesn't open the file)
-    touch myfile1.txt myfile2.txt (create multiple files)
-    cat > myfile1.txt (creates file, opens for editing)
-    cat myfile1.txt (to view the content of the file)
-    > myfile3.txt (creates file using standard redirect symbol,  doesn't open it, can only create one file at the time, and
-                  if preceeded by a commend, then redirects the output of the command to the file).
-    rm myfile1.txt (removes the file)
-    rmdir mydir (removes directory)
-    mv myfile1.txt myfile2.txt (renames the file, kindof moves to the new "name")
-    mv myfile1.txt /dir1/dir2 /dira/dirb (moves the file to another directory)
-    cp (copies the file)
-    cp -r /dir1 /dir2 (copies the entire directory structure to a new directory)
-    ln (creates a link)
-    ln - s /dir1/Downloads /dir1/Desktop (creates a symbolic link)
-    chmod (changes permissions)
-    chmod +x myscript.sh (adds execute permissions to the script)
-    chmod -x myscript.sh (removes execute permissions to the script)
-    man <command> (shows manual pages)
-    man -k <item> (manual pages where item is found, navigate to next by pressing n)
-    cal (shows calendar)
-    ls (directory content)
-    ls -l (directory listing)
-    ls -a (directory listing including hidden files)
+> > pwd   (print working directory) .   
+    cd mydir (change directory) .    
+    cd .. (up one level) .   
+    mkdir (create directory) .   
+    mkdir -p .   
+    rmdir mydir (remove directory) .   
+    touch myfile.txt (create file, doesn't open the file) .   
+    touch myfile1.txt myfile2.txt (create multiple files) .   
+    cat > myfile1.txt (creates file, opens for editing) .   
+    cat myfile1.txt (to view the content of the file) .   
+    > myfile3.txt (creates file using standard redirect symbol,  doesn't open it, can only create one file at the time, and         if preceeded by a commend, then redirects the output of the command to the file).
+    rm myfile1.txt (removes the file) .   
+    rmdir mydir (removes directory) .   
+    mv myfile1.txt myfile2.txt (renames the file, kindof moves to the new "name") .   
+    mv myfile1.txt /dir1/dir2 /dira/dirb (moves the file to another directory) .   
+    cp (copies the file) .   
+    cp -r /dir1 /dir2 (copies the entire directory structure to a new directory) .   
+    ln (creates a link) .   
+    ln - s /dir1/Downloads /dir1/Desktop (creates a symbolic link)    
+    chmod (changes permissions) .   
+    chmod +x myscript.sh (adds execute permissions to the script) .   
+    chmod -x myscript.sh (removes execute permissions to the script) .   
+    man <command> (shows manual pages) .   
+    man -k <item> (manual pages where item is found, navigate to next by pressing n) .   
+    cal (shows calendar) .   
+    ls (directory content) .   
+    ls -l (directory listing) .   
+    ls -a (directory listing including hidden files) .   
     
  
 
