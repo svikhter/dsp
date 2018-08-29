@@ -64,7 +64,14 @@ What do the following commands do:
 `ls -t`  
 `ls -Glp`  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > ls (directory listing) .   
+ls - a (directory liusting including hidden files) .   
+ls -l (directory listing, in long format) .   
+ls -lh (dir listing, long format, when -h is used with -l use unit suffixes for file size) .   
+ls -lah (dir listing, long format, include hidden files, use unit suffixes) .   
+ls -t (dir listing sorted by time modified, most recent first) .   
+ls - Glp (dir listing, colorized output, long format, writes a slash after each filename if its a dir) .   
+
 
 ---
 
