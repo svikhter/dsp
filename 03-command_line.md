@@ -67,12 +67,12 @@ What do the following commands do:
 `ls -Glp`  
 
 > > ls (directory listing) .   
-ls - a (directory liusting including hidden files) .   
-ls -l (directory listing, in long format) .   
-ls -lh (dir listing, long format, when -h is used with -l use unit suffixes for file size) .   
-ls -lah (dir listing, long format, include hidden files, use unit suffixes) .   
-ls -t (dir listing sorted by time modified, most recent first) .   
-ls - Glp (dir listing, colorized output, long format, writes a slash after each filename if its a dir) .   
+**ls** - a (directory listing including hidden files) .   
+**ls** -l (directory listing, in long format) .   
+**ls** -lh (dir listing, long format, when -h is used with -l use unit suffixes for file size) .   
+**ls** -lah (dir listing, long format, include hidden files, use unit suffixes) .   
+**ls** -t (dir listing sorted by time modified, most recent first) .   
+**ls** - Glp (dir listing, colorized output, long format, writes a slash after each filename if its a dir) .   
 
 
 ---
@@ -95,7 +95,7 @@ ls -v (unedited printing of non graphic characters) .
 What does `xargs` do? Give an example of how to use it.
 
 > > xargs is a command that converts input into an argument to a command.    
-It looks like it is useful when we need to apply a command to multiple filepaths, to search,or manipulate with multiple files. I will explore more.    
+It is useful when we need to apply a command to multiple filepaths, to search,or manipulate with multiple files. 
 
 An simple example (both commands create empty file).          
 touch myfile1.txt .   
