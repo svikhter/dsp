@@ -56,7 +56,7 @@ thinkplot.PrePlot(2)
 thinkplot.Hist(Hist_weight_firsts, align = 'left', width = 0.45)  
 thinkplot.Hist(Hist_weight_other, align = 'right', width = 0.45)  
 
-![hist image](https://github.com/svikhter/dsp/edit/master/statistics/Histogram Exercise 2-4 copy.tiff)
+![hist image]("https://github.com/svikhter/dsp/edit/master/statistics/Histogram Exercise 2-4 copy.tiff")
 
 Cohen's D compares difference between groups to variability within groups.  
 (diff between means) /  (pooled standard deviation)  
