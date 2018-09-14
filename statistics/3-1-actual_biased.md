@@ -85,7 +85,15 @@ Plot biased separately to view:
 
 ![ex_3_1_biased_pmf](add linkl)
 
+Compute their means:  
 
+    print('mean', num_of_kids_pmf.Mean())
+    print(' biased mean', biased_pmf.Mean())
+    
+Here is what I see:
+
+mean 1.024205155043831
+ biased mean 1.9186274509803922
 
 
 
