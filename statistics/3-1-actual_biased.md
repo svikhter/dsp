@@ -8,29 +8,34 @@
 In this case dataframe resp was created using predefined function ReadFemResp (function definition can be found in nsfg module)  
 
 View data:    
-    resp 
-    
 
-View column list:  
+    resp 
+   
+
+View column list: 
+
     resp.columns  
 
-Column list:  
+Column list: 
+
     list(resp)  
 
 The result was column list as a list of strings
 
 View data in the column:
->>resp['numkdhh']
+
+    resp['numkdhh']
 
 Create histogram:
->>hist_num_kids = thinkstats2.Hist(resp.numkdhh, label='num_of_kids_in_hh')
->>thinkplot.Hist(hist_num_kids)
->>thinkplot.Config(xlabel='Number of kids', ylabel='Count')
+
+    hist_num_kids = thinkstats2.Hist(resp.numkdhh, label='num_of_kids_in_hh')
+    thinkplot.Hist(hist_num_kids)
+    thinkplot.Config(xlabel='Number of kids', ylabel='Count')
 
 ![hist_num_kids](/include link here)  
 
->>num_of_kids_pmf = thinkstats2.Pmf(resp.numkdhh, label='num_kids')
->>num_of_kids_pmf
+    num_of_kids_pmf = thinkstats2.Pmf(resp.numkdhh, label='num_kids')
+    num_of_kids_pmf
 
 Result:
 Pmf({0: 0.466178202276593, 1: 0.21405207379301322, 2: 0.19625801386889966, 3: 0.08713855815779145, 4: 0.025644380478869556, 5: 0.01072877142483318}) 
@@ -43,43 +48,40 @@ Now, move to the biased pmf:
 I created my own version of the function:  
 For each num_of_kids, we multiply the probability by num of kids responding 
 
-  def BiasedPmf(pmf, label):  
-  >>>>new_pmf = pmf.Copy(label=label) 
-  >>>>for x, p in pmf.Items(): 
-    
-    #note: pmf will be = num_of_kids_pmf 
-    
->>>>>>new_pmf.Mult(x, x) 
-    
-    
->>>>new_pmf.Normalize() 
->>>>return new_pmf
+        def BiasedPmf(pmf, label):  
+            new_pmf = pmf.Copy(label=label) 
+            for x, p in pmf.Items(): 
+                new_pmf.Mult(x, x) 
+            new_pmf.Normalize() 
+            return new_pmf
 
--------------------------------------------
+
 Run the function, pass two arguments: pmf = num_of_kids_pmf and  label = 'numkdhh'.
 
->>KidsBiasedPmf = BiasedPmf(num_of_kids_pmf, 'numkdhh') 
+    KidsBiasedPmf = BiasedPmf(num_of_kids_pmf, 'numkdhh') 
 
 Read values:
->>KidsBiasedPmf 
+
+    KidsBiasedPmf 
 
 Here is what I see:
 Pmf({0: 0.0, 1: 0.4009803921568627, 2: 0.3676470588235294, 3: 0.16323529411764706, 4: 0.04803921568627451, 5: 0.020098039215686272}) . 
 
 Now plot it:  
->>biased_pmf = BiasedPmf(num_of_kids_pmf, label='numkdhh')
->>thinkplot.PrePlot(2)
->>thinkplot.Pmfs([num_of_kids_pmf, biased_pmf])
->>thinkplot.Config(xlabel='Num of children', ylabel='PMF')
+
+    biased_pmf = BiasedPmf(num_of_kids_pmf, label='numkdhh')
+    thinkplot.PrePlot(2)
+    thinkplot.Pmfs([num_of_kids_pmf, biased_pmf])
+    thinkplot.Config(xlabel='Num of children', ylabel='PMF')
 
 ![ex_3_1_num_f_kids_vs_biased](add link)
 
 Plot biased separately to view:  
 
->>biased_pmf = BiasedPmf(num_of_kids_pmf, label='numkdhh')
->>thinkplot.PrePlot(1)
->>thinkplot.Pmfs([biased_pmf])
->>thinkplot.Config(xlabel='Num of children', ylabel='PMF')
+    biased_pmf = BiasedPmf(num_of_kids_pmf, label='numkdhh')
+    thinkplot.PrePlot(1)
+    thinkplot.Pmfs([biased_pmf])
+    thinkplot.Config(xlabel='Num of children', ylabel='PMF')
 
 ![ex_3_1_biased_pmf](add linkl)
 
