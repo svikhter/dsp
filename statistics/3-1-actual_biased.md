@@ -1,14 +1,14 @@
 [Think Stats Chapter 3 Exercise 1](http://greenteapress.com/thinkstats2/html/thinkstats2004.html#toc31) (actual vs. biased) 
 
 In this example we explore "class size paradox"   
-First, I created the data frame:
-
->>resp = nsfg.ReadFemResp() 
+First, I created the data frame:  
+    resp = nsfg.ReadFemResp() 
 
 In this case dataframe resp was created using predefined function ReadFemResp (function definition can be found in nsfg module)  
 
-View data:  
->>resp  
+View data:    
+    resp 
+    
 
 View column list:  
 >>resp.columns  
