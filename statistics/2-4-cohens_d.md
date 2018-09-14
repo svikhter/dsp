@@ -1,16 +1,20 @@
 [Think Stats Chapter 2 Exercise 4](http://greenteapress.com/thinkstats2/html/thinkstats2003.html#toc24) (Cohen's d)
 
 
-I created my own version of the function, with descriptive names of the variables.This helped me better understand what this function is doing.
+I created my own version of the function, with descriptive names of the variables.  
 
->>def Coheneffectsize_SV(group1, group2):    
-  diff_in_mean = group1.mean() - group2.mean()   
-  size1, size2 = len(group1), len(group2)   
-  variance1, variance2 = group1.var(), group2.var() 
-  pooled_variance = (size1 * variance1 + size2 * variance2)/ (size1 + size2)  
-  pooled_standard_deviation = np.sqrt(pooled_variance)  
-  Cohen_d = diff_in_mean / pooled_standard_deviation  
-  return Cohen_d
+
+  def Coheneffectsize_SV(group1, group2):    
+      diff_in_mean = group1.mean() - group2.mean()   
+      size1, size2 = len(group1), len(group2)   
+      variance1, variance2 = group1.var(), group2.var() 
+      pooled_variance = (size1 * variance1 + size2 * variance2)/ (size1 + size2)  
+      pooled_standard_deviation = np.sqrt(pooled_variance)  
+      Cohen_d = diff_in_mean / pooled_standard_deviation  
+      return Cohen_d
+ 
+  
+  
   
   
 Then, I created dafa frames and series and used the above function:
@@ -61,7 +65,7 @@ thinkplot.Hist(Hist_weight_other, align = 'right', width = 0.45)
 Cohen's D compares difference between groups to variability within groups.  
 (diff between means) /  (pooled standard deviation)  
   
-  
-  The result is a negative value.   
+   
+  Result is a negative value: -0.08 . 
   I researched what this means: I got "negative effect size", and in this case effect is decreasing the mean.  
    
