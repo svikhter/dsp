@@ -93,9 +93,19 @@ Elvis Presley had a twin brother who died at birth.  What is the probability tha
 ### Q6. Bayesian &amp; Frequentist Comparison  
 How do frequentist and Bayesian statistics compare?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> 
+Bayesian inference:  
 
----
+ - Uses probability of data and hypothesis  
+ - Requires "prior" 
+ - depends on "likelihood" of observed data to come up with "posterior" .  
+ 
+
+Frequentist inference:  
+
+- Doesn't use probability of hypothesis (either "prior" or "posterior")  
+- Depends on likelihood of observed and unobserved data  
+- Doesn't require "prior" . 
 
 ## <a name="section-e"></a>5.  Optional Exercises
 
