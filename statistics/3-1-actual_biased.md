@@ -32,7 +32,7 @@ Create histogram:
     thinkplot.Hist(hist_num_kids)
     thinkplot.Config(xlabel='Number of kids', ylabel='Count')
 
-![hist_num_kids](/include link here)  
+![hist_num_kids](/img/Added_Image_Ex_3_1_Num_of_kids.png)  
 
     num_of_kids_pmf = thinkstats2.Pmf(resp.numkdhh, label='num_kids')
     num_of_kids_pmf
