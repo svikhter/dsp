@@ -64,7 +64,7 @@ I also tried to plot the weights, but  I think there were too many different val
     thinkplot.Hist(Hist_weight_firsts, align = 'left', width = 0.45)  
     thinkplot.Hist(Hist_weight_other, align = 'right', width = 0.45)  
 
-![hist image](/img/Added_Image_Stats_2_4.pages)
+![hist image](/img/Added_Image_Stats_2_4.png)
 
 Cohen's D compares difference between groups to variability within groups.  
 (diff between means) /  (pooled standard deviation)  
