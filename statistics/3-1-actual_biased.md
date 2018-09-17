@@ -74,7 +74,7 @@ Now plot it:
     thinkplot.Pmfs([num_of_kids_pmf, biased_pmf])
     thinkplot.Config(xlabel='Num of children', ylabel='PMF')
 
-![ex_3_1_num_f_kids_vs_biased](add link)
+![ex_3_1_num_f_kids_vs_biased](/img/Added_Image_Ex3_1_num_of_kids_vs_biased.png)
 
 Plot biased separately to view:  
 
@@ -83,7 +83,7 @@ Plot biased separately to view:
     thinkplot.Pmfs([biased_pmf])
     thinkplot.Config(xlabel='Num of children', ylabel='PMF')
 
-![ex_3_1_biased_pmf](add linkl)
+![ex_3_1_biased_pmf](/img/Added_Image_Ex_3_1_biased_pmf.png)
 
 Compute their means:  
 
