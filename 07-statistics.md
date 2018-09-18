@@ -86,8 +86,49 @@ Bayes' Theorem is an important tool in understanding what we really know, given 
 
 Elvis Presley had a twin brother who died at birth.  What is the probability that Elvis was an identical twin? Assume we observe the following probabilities in the population: fraternal twin is 1/125 and identical twin is 1/300.  
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>>Here is Python code I used to solve this:   
 
+    #Bayes theorem
+    #p(A|B) = p(A) p(B|A) / p(B)
+    #where A and B are events and p(B)!=0
+
+
+    pIdentical = 1/300  
+    pFraternal = 1/125 
+    pAnyTwin = pIdentical+pFraternal #about 0.011
+
+    #Before we know data, by observation, identical twins are about 27% of all twins
+    pPriorH_Identical = pIdentical/pAnyTwin  #0.272 
+    pPriorH_Fraternal = pFraternal/pAnyTwin  
+
+    #Additional data: identical twins always come as pairs og boy-boy or girl-girl
+    #This means that he had 50% chance to be in the identical twins boy-boy pair
+    #In fraternal twins case he would have 0.25 chance to be in boy-boy pair
+
+    Likelihood_Identical = 0.5
+    Likelihood_Fraternal = 0.25
+
+    #product_A = p(H) p(D|H)= Prior * Likelihood
+
+    Product_I = pPriorH_Identical * Likelihood_Identical
+    Product_F = pPriorH_Fraternal * Likelihood_Fraternal
+
+    #Normalizing Constant
+    Normalizing_Constant = Product_I + Product_F
+
+    #Posterior = p(H|D) = Product / Normalizing_Constant
+    Posterior_I = Product_I / Normalizing_Constant
+    Posterior_F = Product_F / Normalizing_Constant
+
+
+
+    print(Posterior_I)
+    
+    #print(Posterior_F)
+
+
+    #The result: posterior probability for Presley being an identical twin is:  
+    #0.45454545454545464
 ---
 
 ### Q6. Bayesian &amp; Frequentist Comparison  
