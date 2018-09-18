@@ -77,6 +77,6 @@
             thinkplot.Plot(age_group_means, weight) 
             
             
-  ![image](include image)          
+  ![image_included_Added_Image_Ex_7_1_percentile.png](/img/Added_Image_Ex_7_1_percentile.png)          
     
     
