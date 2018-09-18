@@ -19,5 +19,7 @@
                  axis=[10, 70, 0.1, 15],  
                  legend=False) . 
                  
+  Here is the scatter plot of mother's age Vs baby weight:              
+                 
   ![image Added_Image_Ex_7_1_mother_age_baby_weight.png](/img/Added_Image_Ex_7_1_mother_age_baby_weight.png)               
 
