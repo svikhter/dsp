@@ -48,7 +48,26 @@ Make a cheat sheet for yourself: a list of at least **ten** commands and what th
     **ls**  - directory content .   
     **ls -l**  - directory listing .   
     **ls -a** -  directory listing including hidden files .   
-    **awk** - is something I'd like to explore, sounds like a useful thing .   
+    **awk** - this command provides scripting language for text processing 
+      *Here is how it is used:  
+      $ options program file  
+      Options:    
+      -F <filesepartor> - file separator  (default is space/tab) 
+      -f <file> - the file that contains awk script     
+      -v var=value - varioable assignment   
+      It assignes variables to each data field in file:  
+         $0 for the whole line.  
+         $1 for the first field.  
+         $2 for the second field.  
+         $n for the nth field.  
+      Example: prints first word in each line:  
+      $ awk '{print $1}' myfile*
+   
+   
+   
+      
+   
+   
     
     
  
